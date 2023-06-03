@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="./favicons.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="./app.js" defer></script>
+    <title>Bugdet App</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-title">
+            Budget App
+        </div>
+    </nav>
+
+    <header class="container">
+        <!-- Dashboard Title -->
+
+        <div class="main-title flex">
+            <div class="dashborad-title">
+                <h1>Dashboard</h1>
+                <p>Hello! Zain, Welcome Back. </p>
+            </div>
+
+            <div class="reset-btn flex" id="reset">
+                Reset
+            </div>
+        </div>
+
+        <!-- Dashboard -->
+
+        <main class="dashboard ">
+
+            <!-- Budget Section -->
+
+            <div class="budgetSection flex">
+                <div class="total-balnace flex fl-col">
+                    <div class="balance-title">
+                        <p>Your Balance</p>
+                    </div>
+                    <div class="balance-amount text-ellipise">
+                        <h1 id="balance-amount">Rs 00,000.00</h1>
+                    </div>
+                </div>
+
+                <!-- Add Budget Card -->
+
+                <div class="addBudget flex fl-col">
+                    <div class="budget-title">Budget</div>
+                    <form action="#" class="flex fl-col">
+                        <input type="number" class="input-feild" id="budgetAmount" placeholder="Enter your budget.."
+                            autofocus>
+                        <button class="primary-btn flex" id="addBudget">Add Budget <ion-icon
+                                name="arrow-forward-outline"></ion-icon></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="expenseSection flex">
+
+                <!-- Income And Expense Card / Expense List -->
+
+                <div class="expense-list-card flex fl-col">
+
+
+                    <div class="income-expense-cards flex">
+
+                        <!-- Income Card -->
+
+                        <div class="incomeCard flex fl-col text-ellises">
+                            <h2 class="income-title">Current Amount</h2>
+                            <h1 id="currentAmount" class="current-amount">Rs 00,000</h1>
+                        </div>
+
+                        <!-- Expense Card -->
+
+                        <div class="expenseCard flex fl-col text-ellises">
+                            <h2 class="expense-title">Expense</h2>
+                            <h1 id="expenseAmount" class="expense-amount">Rs 00,000</h1>
+                        </div>
+                    </div>
+
+                    <!-- Expense List -->
+
+                    <div class="main-title">
+                        <h2>Expense List : </h2>
+                    </div>
+
+                    <div class="expenseList">
+                        <ul class="listITems flex fl-col" id="expenseList">
+
+                            <!-- Expense Items -->
+
+                            <!-- <li class="item flex">
+                                <div class="list-expense-title-desc text-ellises flex">
+                                    <div class="flex fl-col list-text">
+                                        <div class="list-expense-title">Dummy</div>
+                                        <div class="list-expense-desc">Lorem ipsum dolor sit amet.</div>
+                                    </div>
+                                    <div class="list-expense-amount flex fl-col">
+                                        <span>00</span>
+                                        <div class="date">17/07/2002</div>
+                                    </div>
+                                </div>
+                                <button id="delete">X</button>
+                            </li> -->
+
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="addExpense flex fl-col">
+                    <div class="expense-title">Add Expense</div>
+                    <form action="#" class="flex fl-col expenseForm" required>
+                        <div>
+                            <label>Expense Title: </label>
+                            <input type="text" class="input-feild" id="expTitle"
+                                placeholder="Enter your expense title.." required maxlength="15" autocomplete="off">
+                        </div>
+                        <div>
+                            <label>Expense Description: </label>
+                            <input type="text" class="input-feild" id="expDesc" placeholder="Enter your expense Desc.."
+                                required maxlength="30" autocomplete="off">
+                        </div>
+                        <div>
+                            <label>Expense Amount: </label>
+                            <input type="number" class="input-feild" id="expAmount" placeholder="Enter your expense.."
+                                required autocomplete="off">
+                        </div>
+
+                        <div>
+                            <label>Current Date: </label>
+                            <input type="date" class="input-feild" id="date" placeholder="Enter your expense.."
+                                required autocomplete="off" >
+                        </div>
+
+                        <button class="primary-btn flex" id="addExpense">Add Expense <ion-icon
+                                name="arrow-forward-outline"></ion-icon></button>
+                    </form>
+                </div>
+
+                <!-- Created By Muhammad Zain-ul-Abdin Ansari, Roll No : 87132 -->
+
+            </div>
+        </main>
+
+    </header>
+
+    <!-- Footer Section -->
+
+    <footer class="flex container">
+        <div class="footer-text">
+            Copyright © 2023 - All right reserved | Zain-ul-Abdin
+        </div>
+        <div class="footer-social-icons flex">
+            <a href="https://github.com/Md-Zainulabdin" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/m-zain-ul-abdin/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            
+        </div>
+    </footer>
+
+    <!-- ion-icon File -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
